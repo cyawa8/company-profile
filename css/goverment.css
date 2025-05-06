@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for navbar links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for navbar links */
+  .navbar-nav .nav-link:hover {
+    color: #088395;
+  }
+  
+  /* Align navbar collapse to the right */
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar{
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 99999999999999999999;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* carousel */
+
+
+
+  #carousel{
+    background-color: #DDF2FD;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    position: relative;
+    height: 100vh; /* Set height as needed */
+    overflow: hidden;
+}
+
+  .car-cnt {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    width: auto;
+    height: auto;
+
+  }
+
+  .carousel-inner{
+    top: 0;
+  }
+
+  .carousel-item{
+    position: static;
+    height: 650px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Hitam dengan opacity 0.5 */
+  }
+
+
+
+  /* Sembunyikan panah secara default */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+  transform: translateX(-50px); /* Geser panah ke kiri di luar tampilan */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Tampilkan dan geser panah saat hover */
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1; /* Tampilkan panah */
+  transform: translateX(0); /* Geser panah ke posisi awal */
+}
+
+  /* Sembunyikan dropdown menu secara default */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  /* Tampilkan dropdown menu saat kursor mengarah ke menu */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+/* content1 */
+.s03 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Menyesuaikan lebar kolom */
+    gap: 20px; /* Jarak antar elemen grid */
+  }
+
+  @media screen and (max-width: 768px) {
+    .s03 {
+      grid-template-columns: repeat(2, 1fr); /* Mengubah menjadi 2 kolom pada layar kecil */
+    }
+  }
+
+  .itemasd{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10%;
+    height:250PX;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan */
+    /* tambahkan properti lain sesuai kebutuhan */
+  }
+
+  .title, .text{
+    color: white;
+  }
+
+
+  /* content tentang perusahaan */
+
+  #ttgkami{
+    background-color: #ffffff; /* Warna latar belakang */
+    padding: 50px; /* Berikan ruang agar shadow terlihat */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Properti untuk bayangan */
+    height:auto;
+    width: auto !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .contn p{
+    width: 100%;
+    text-align: justify;
+  }
+
+  .selengkapnya{
+    display: flex;
+    justify-content: end;
+  }
+
+  .s-0012{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ttgkamititle{
+    display: flex;
+    justify-content: center;
+  }
+
+  .ttgkami-cntn{
+    text-align: justify;
+  }
+
+  .button-selengkapnya{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    background-color:  #088395;
+  }
+
+  .selengkapnya-button{
+   text-decoration: none;
+   color: white; 
+  }
+
+  /* visimisi */
+  #visimisi{
+   height: auto;
+   width: 100%;
+   display: flex;
+   align-items: center;
+  }
+
+  .visi{
+    width: 100%;
+  }
+
+  .visi h3{
+   color: lightgreen; 
+   width: 100%;
+   display: flex;
+   justify-content: center; 
+  }
+
+  .misi{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .misi h3{
+    color: lightgreen;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+  #mengapa{
+    display: flex;
+    height: auto !important;
+    width: 100%;
+    align-items: center;
+    background: url("../assets/images/background1.png");
+    background-size: cover;
+  }
+
+  .judul{
+    height:50px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* logo mitra */
+  #mitra{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    position: relative;
+  }
+
+  .titlemitra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+   /* CSS untuk div overlay */
+   .overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 130, 149, 0.658); /* Transparansi 50% (hitam) */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 5 items ke samping */
+    gap: 10px; /* Spasi antar item */
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr); /* 5 items ke samping */
+      gap: 2px
+    }
+  }
+  
+  .grid-items {
+
+    padding: 20px;
+    text-align: center; 
+  }
+
+  /* CSS untuk tampilan layar kecil */
+  @media (max-width: 767px) {
+    .grid-item {
+      width: 100%;
+    }
+    .imagesss {
+      display: flex;
+      justify-content: center;
+    }
+    .itemasd {
+      position: relative;
+      margin-top: 100px; /* Ubah margin sesuai kebutuhan */
+    }
+  }
+
+  .wrapp{
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrappp{
+    width: 97%;
+    z-index: 10;
+  }
+
+  .buttonss{
+    width : 100%;
+    display: flex;
+    justify-content: end;
+    margin: 20px
+  }
+  
+  .btn-more-cl{
+    padding: 15px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #ffffff;
+    font-weight: bolder;
+    color: #088395;
+    width: 200px;
+  }
+
+  /* .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+   */
+  .logo {
+    max-width: 100px; /* Atur lebar maksimum logo */
+    max-height: 100px; /* Atur tinggi maksimum logo */
+    width: auto; /* Sesuaikan ukuran agar proporsi terjaga */
+    height: auto; /* Sesuaikan ukuran agar proporsi terjaga */
+    margin: 5px; /* Atur spasi antar logo */
+  }
+
+  .logo-list {
+    display: none;
+  }
+  
+  .logo-list.show {
+    display: block;
+  }
+
+  /* grid-maretplace */
+  #market{
+    padding: 40px;
+  }
+
+  #mitra{
+    background: url("../assets/images/background22.png") center center no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+
+  .grid-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 5 kolom */
+    grid-template-rows: auto auto auto; /* 3 baris */
+    gap: 10px; /* Spasi antar item */
+    justify-content: center; /* Rata tengah */
+  }
+
+  .grid-itemss {
+    padding: 20px;
+    text-align: center;
+    transition: filter 1s ease-in; /* Mengatur efek transisi saat hover */
+  }
+
+  .grid-itemss img, .grid-itemss-5 img{
+    height: 150px;
+    filter: grayscale(0%); /* Mengubah gambar menjadi hitam putih secara default */
+    transition: filter 0.3s ease-in; /* Mengubah gambar menjadi hitam putih secara default */
+  }
+
+  .grid-itemss:hover img, .grid-itemss-5:hover img{
+    height: 150px;
+    filter: grayscale(100%); /* Mengubah gambar menjadi hitam putih secara default */
+  }
+
+  .grid-itemss-5{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    transition: filter 0.3s ease; /* Mengatur efek transisi saat hover */
+  }
+
+  .title-market, .title-market h3{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;    
+    z-index: 99999;
+    color:#128091;
+  }
+
+  #footer {
+    background-image: url('../assets/images/background-footer.jpg');
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengubah jumlah kolom pada grid */
+    gap: 20px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center; /* Menyesuaikan tata letak teks */
+  }
+  
+  .column h5 {
+    margin: 5px 0;
+  }
+  
+  #copyright {
+    background-color: #128091;
+  }
+  
+  .garis {
+    width: 25%;
+    border: solid 0.5px #ffffff;
+  }
+  
+  .logos {
+    padding: 10px; /* Mengurangi padding untuk responsifitas */
+  }
+  
+  .comuns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ouurs a {
+    color: white !important;
+    text-decoration: none !important;
+  }
+  
+  .telepon a,
+  .mail a {
+    color: white;
+    text-decoration: none;
+  }
+

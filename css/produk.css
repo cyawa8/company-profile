@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styles for navbar links */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+  color: #088395;
+  
+}
+
+/* Align navbar collapse to the right */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* jumbotron */
+.jumbotron{
+  position: relative;
+  width: 100%;
+}
+.jumbotron img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textjumbotron{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+
+.kategori-btn{
+  height: 80px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Untuk menghilangkan default underline pada link */
+  color: #000; /* Ganti warna teks sesuai kebutuhan */
+
+}
+
+.col-md-12{
+  margin: 0;
+  padding: 0;
+}
+
+/* carousel button */
+.content-produk{
+  height: 100%;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  height: 0;
+}
+
+.carousel-indicators button {
+  width: 20px !important; /* Sesuaikan lebar dan tinggi sesuai keinginan Anda */
+  height: 20px !important;
+  border-radius: 50%;
+  border: 2px solid #088395; /* Blue color */
+  background-color: black;
+  margin: 0 5px;
+  cursor: pointer;
+  transform: scale(0.8); /* Sesuaikan nilai skala sesuai kebutuhan */
+}
+
+.carousel-indicators button:not(.active) {
+  background-color: black; /* Warna hitam untuk titik indikator tidak aktif */
+}
+
+.carousel-indicators .active {
+  background-color:#088395; /* Blue color */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 40px; /* Atur lebar tombol */
+  height: 40px; /* Atur tinggi tombol */
+  border-radius: 50%; /* Bentuk lingkaran */
+  background-color: #088395; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  display: flex; /* Gunakan display flex */
+  align-items: center; /* Atur posisi tombol ke tengah vertikal */
+  justify-content: center; /* Atur posisi tombol ke tengah horizontal */
+  top:43%;
+}
+
+/* footer */
+#footer {
+  background-image: url('../assets/images/background-footer.jpg');
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 30px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengubah jumlah kolom pada grid */
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center; /* Menyesuaikan tata letak teks */
+}
+
+.column h5 {
+  margin: 5px 0;
+}
+
+#copyright {
+  background-color: #128091;
+}
+
+.garis {
+  width: 25%;
+  border: solid 0.5px #ffffff;
+}
+
+.logos {
+  padding: 10px; /* Mengurangi padding untuk responsifitas */
+}
+
+.comuns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ouurs a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.telepon a,
+.mail a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* ==================================== */

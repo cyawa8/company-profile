@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([^/]+)$ $1.php [L]
+</IfModule>
+
+DirectoryIndex main.php aboutus.php artikel.php artikel_all.php dashboard.php government.php kontak.php login.php partner.php produk.php user.php produk-admin.php setting.php

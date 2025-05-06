@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: black !important;
+}
+
+/* CSS Custom untuk Navbar */
+
+
+/* Styles for navbar links */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+  color: #088395;
+}
+
+/* Align navbar collapse to the right */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.image-carousel{
+  position: relative;
+}
+
+/* Sembunyikan dropdown menu secara default */
+.dropdown-menu {
+display: none;
+}
+
+/* Tampilkan dropdown menu saat kursor mengarah ke menu */
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.row-md-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Kartu 3 kolom */
+  gap: 20px; /* Jarak antar grid items */
+}
+
+/* Gaya untuk setiap grid item */
+.grid-item {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0; /* Menghapus margin */
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .row-md-3 {
+    grid-template-columns: repeat(2, 1fr); /* Pada layar kecil, kartu 2 kolom */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .row-md-3 {
+    grid-template-columns: 1fr; /* Pada layar sangat kecil, satu kolom */
+  }
+}
+
+.card{
+  border: none;
+}
+
+.kartu img{
+  position: relative;
+  height: 180px;
+  width: 100%;
+}
+
+.card-img-top {
+  border-bottom: 1px solid #ddd; /* Garis pemisah antara gambar dan body kartu */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-body p{
+  height: 100px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.button-artikel {
+  margin-top: auto;
+}
+
+/* Mengatasi masalah overflow konten */
+.ellipsis-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pagination{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* footer */
+#footer {
+  background-image: url('../assets/images/background-footer.jpg');
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 30px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.column h3 {
+  margin: 5px 0;
+}
+
+.column:nth-child(3) {
+  position: relative;
+}
+
+.column:nth-child(3) p {
+  margin-top: auto;
+}
+
+#copyright{
+  background-color: #128091;
+}
+
+.garis{
+  width: 25%;
+  border: solid 0.5px #ffffff;
+}
+
+.logos{
+  padding: 20px;
+}
+
+.comuns{
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,189 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#ffffff;
+    color: #088395;
+}
+
+/* Styles for navbar links */
+.container-fluid{
+    width: 80%;
+  }
+
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for navbar links */
+  .navbar-nav .nav-link:hover {
+    color: #088395;
+  }
+  
+  /* Align navbar collapse to the right */
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar{
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Sembunyikan dropdown menu secara default */
+.dropdown-menu {
+  display: none;
+}
+
+/* Tampilkan dropdown menu saat kursor mengarah ke menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#section-1{
+    margin-top: 30px;
+}
+
+.text{
+ margin-left: 5%;
+}
+
+#section-2{
+    background-color: white !important;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    height: 100%;
+
+}
+
+.form-contact{
+    margin-right: 5%;
+    width: 50%;
+}
+
+.information{
+    width: 50%;
+}
+
+/* Mengatur konten pada layar kecil */
+@media (max-width: 767px) {
+  .information {
+    order: -1; /* Mengubah urutan elemen menjadi sebelum form-contact */
+  }
+  .content{
+    display: block;
+  }
+
+  .information{
+    width: 100%;
+    }
+
+  .inf{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .form-contact{
+    width: 100%;
+}
+
+.bungkusan h4{
+    text-align: center;
+}
+
+.group-telepon h5{
+    text-align: center;
+}
+
+.group-mail{
+    text-align: center;
+}
+
+}
+
+.maps{
+    margin-right: 5%;
+}
+
+.maps iframe{
+    border-radius: 30px;
+}
+
+.mail{
+    display: flex;
+    align-items:center; ;
+    height: 46px;
+}
+
+.mail p{
+    margin-left: 15px;
+}
+
+.mail-text{
+    margin: 0;
+}
+
+.telepon-text{
+    margin-left: 15px;
+}
+
+/* footer */
+#footer {
+  background-image: url('../assets/images/background-footer.jpg');
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 30px 0;
+  }
+  
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengubah jumlah kolom pada grid */
+  gap: 20px;
+  }
+  
+  .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center; /* Menyesuaikan tata letak teks */
+  }
+  
+  .column h5 {
+  margin: 5px 0;
+  }
+  
+  #copyright {
+  background-color: #128091;
+  }
+  
+  .garis {
+  width: 25%;
+  border: solid 0.5px #ffffff;
+  }
+  
+  .logos {
+  padding: 10px; /* Mengurangi padding untuk responsifitas */
+  }
+  
+  .comuns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .ouurs a {
+  color: white !important;
+  text-decoration: none !important;
+  }
+  
+  .telepon a,
+  .mail a {
+  color: white;
+  text-decoration: none;
+  }
